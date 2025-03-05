@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burger Hut</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
 </head>
 <body>
 
@@ -130,51 +135,180 @@
 <!-- priecing section start -->
 
 
-<section id="pricing" class="pricing-section">
-    <div class="container">
-        <h2 class="section-title">Our Pricing</h2>
-        <p class="section-subtitle">Choose the best deal for you!</p>
-        <div class="pricing-grid">
-            <div class="pricing-card">
-                <h3>Classic Burger</h3>
-                <p class="price">$5.99</p>
-                <ul>
-                    <li>Fresh beef patty</li>
-                    <li>Cheese & Lettuce</li>
-                    <li>Signature Sauce</li>
-                </ul>
-                <button class="btn-order">Order Now</button>
-            </div>
-            <div class="pricing-card best-deal">
-                <h3>Special Combo</h3>
-                <p class="price">$9.99</p>
-                <ul>
-                    <li>Classic Burger</li>
-                    <li>Medium Fries</li>
-                    <li>Soft Drink</li>
-                </ul>
-                <button class="btn-order">Order Now</button>
-            </div>
-            <div class="pricing-card">
-                <h3>Family Pack</h3>
-                <p class="price">$19.99</p>
-                <ul>
-                    <li>4 Classic Burgers</li>
-                    <li>2 Large Fries</li>
-                    <li>4 Soft Drinks</li>
-                </ul>
-                <button class="btn-order">Order Now jckvbdffvb
-                    
-                </button>
-            </div>
+<!-- Pricing Section -->
+<section class="pricing-section">
+    <h2 class="section-title">Our Pricing</h2>
+    <p class="section-subtitle">Affordable and delicious meal plans just for you!</p>
+
+    <div class="pricing-grid">
+        <!-- Basic Plan -->
+        <div class="pricing-card">
+            <h3>Basic Meal</h3>
+            <p class="price">$5.99</p>
+            <ul>
+                <li>1 Burger</li>
+                <li>Small Fries</li>
+                <li>Soft Drink</li>
+            </ul>
+            <button class="btn-order">Order Now</button>
+        </div>
+
+        <!-- Standard Plan -->
+        <div class="pricing-card best-deal">
+            <h3>Combo Meal</h3>
+            <p class="price">$9.99</p>
+            <ul>
+                <li>2 Burgers</li>
+                <li>Large Fries</li>
+                <li>Soft Drink</li>
+            </ul>
+            <button class="btn-order">Order Now</button>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="pricing-card">
+            <h3>Family Pack</h3>
+            <p class="price">$15.99</p>
+            <ul>
+                <li>4 Burgers</li>
+                <li>2 Large Fries</li>
+                <li>2 Soft Drinks</li>
+            </ul>
+            <button class="btn-order">Order Now</button>
+        </div>
+    </div>
+</section>
+ <!-- pricing sections end  -->
+
+ <!-- google revies  start-->
+<!-- Google Reviews Section -->
+<section class="reviews-section">
+    <h2 class="section-title">Customer Reviews</h2>
+    <div class="reviews-slider">
+        <!-- Review 1 -->
+        <div class="review-card">
+            <img src="https://via.placeholder.com/80" alt="User">
+            <h3>John Doe</h3>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"The best burgers in town! Absolutely loved the flavors."</p>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+            <img src="https://via.placeholder.com/80" alt="User">
+            <h3>Sarah Smith</h3>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Amazing service and delicious burgers. Highly recommend!"</p>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+            <img src="https://via.placeholder.com/80" alt="User">
+            <h3>Michael Brown</h3>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Great taste and excellent quality. Will visit again!"</p>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="review-card">
+            <img src="https://via.placeholder.com/80" alt="User">
+            <h3>Emma Wilson</h3>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Loved the juicy burgers! Perfectly cooked and flavorful."</p>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="review-card">
+            <img src="https://via.placeholder.com/80" alt="User">
+            <h3>David Miller</h3>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Superb quality! The best burgers in town!"</p>
         </div>
     </div>
 </section>
 
- <!-- pricing sections end  -->
+
+ <!-- google revies end -->
+
+ <!-- Call to Action Section -->
+ <section class="cta-section">
+    <div class="cta-overlay">
+        <h2 class="cta-title">Get Your Burger Now!</h2>
+        <p class="cta-subtitle">Limited-time offer: <strong>Get 20% off</strong> on your first order!</p>
+
+        <form class="cta-form">
+            <input type="email" placeholder="Enter your email for exclusive deals" required>
+            <button type="submit">Subscribe</button>
+        </form>
+
+        <p class="cta-small-text">*Offer valid for new customers only.</p>
+    </div>
+</section>
+ <!-- Call to Action Section end -->
 
 
 
+
+
+    <!-- Contact Us Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            
+            <!-- Left Side: Google Map -->
+            <div class="contact-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14014.112599988123!2d77.2148417!3d28.56717065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2642922dbfd%3A0xcfc3bc1e08f3f25!2sSouth%20Extension%20Part%201%2C%20New%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- Right Side: Contact Details & Form -->
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p><strong>Address:</strong> South Ex Part 1, New Delhi</p>
+                <p><strong>Phone:</strong> <a href="tel:+919718013383">+91 9718013383</a></p>
+                <p><strong>Name:</strong> Virender Pal</p>
+
+                <!-- Inquiry Form -->
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+      <!-- Contact Us Section end -->
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <a href="#" class="social-icon" id="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon" id="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon" id="twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <!-- Quick Links -->
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+
+            <!-- Copyright -->
+            <p class="footer-copy">&copy; 2025 Burger Hut. All rights reserved.</p>
+        </div>
+    </footer>
+
+     <!-- Footer Section end -->
+
+     <script src="https://kit.fontawesome.com/your-fontawesome-key.js" crossorigin="anonymous"></script>
 
     <script>
         function toggleMenu() {
